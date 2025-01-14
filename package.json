@@ -1,16 +1,45 @@
 {
+    "bin": {
+        "express-puppeteer-proxy": "./dist/index.js"
+    },
     "scripts": {
         "build": "tsc",
         "watch": "tsc -w",
         "lint": "eslint ./src",
-        "console": "node dist/bin/console.js"
+        "console": "node dist/index.js"
     },
     "devDependencies": {
         "@eslint/js": "^9.10.0",
         "@types/eslint__js": "^8.42.3",
+        "@types/express": "^5.0.0",
         "@types/node": "^22.5.5",
         "eslint": "^9.10.0",
         "typescript": "^5.6.2",
         "typescript-eslint": "^8.6.0"
-    }
+    },
+    "dependencies": {
+        "express": "^4.21.2",
+        "puppeteer": "^24.0.0"
+    },
+    "name": "@dambrogia/express-puppeteer-proxy",
+    "version": "1.0.0",
+    "description": "A proxy for requests through puppeteer",
+    "main": "dist/index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dambrogia/express-puppeteer-proxy.git"
+    },
+    "keywords": [
+        "node",
+        "puppeteer",
+        "express",
+        "proxy",
+        "typescript"
+    ],
+    "author": "domdambrogia@gmail.com",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/dambrogia/express-puppeteer-proxy/issues"
+    },
+    "homepage": "https://github.com/dambrogia/express-puppeteer-proxy#readme"
 }
