@@ -2,11 +2,13 @@
     "bin": {
         "express-puppeteer-proxy": "./dist/index.js"
     },
+
     "scripts": {
         "build": "tsc",
         "watch": "tsc -w",
         "lint": "eslint ./src",
-        "console": "node dist/index.js"
+        "console": "node dist/index.js",
+        "prepare": "npm run build"
     },
     "devDependencies": {
         "@eslint/js": "^9.10.0",
